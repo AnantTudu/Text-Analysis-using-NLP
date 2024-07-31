@@ -1,0 +1,49 @@
+
+Approach
+
+Data Extraction: We'll use Python libraries such as BeautifulSoup or Scrapy to parse the HTML content of each webpage.
+By inspecting the HTML structure of the webpage, we'll identify the elements containing the article title and text.
+Once we locate these elements, we'll extract the text data and save it into separate text files.
+Each text file will be named after its corresponding URL_ID, ensuring that we can easily track which article each file belongs to.
+
+
+
+Text Analysis: With the text data extracted from the articles, we'll utilize Natural Language Processing (NLP) techniques to analyze the textual content.
+We'll calculate various metrics that provide insights into the sentiment and complexity of the articles.
+These metrics may include positive score, negative score, polarity score, subjectivity score, average sentence length, percentage of complex words, Fog index, average number of words per sentence, and more.
+By analyzing these metrics, we can gain a deeper understanding of the articles' content and characteristics.
+
+
+
+Output Generation: After performing text analysis on each article, we'll organize the results into a structured format.
+Each row of the output Excel file will represent an article, containing both the input variables from the input file and the calculated metrics.
+The output file will follow the format specified in the "Output Data Structure.xlsx" file, ensuring consistency and ease of interpretation.
+By saving the data into an Excel file, we make it convenient for further analysis, visualization, and sharing with others.
+
+
+Overall, this process allows us to systematically extract data from web articles, analyze the textual content using NLP techniques, and present the findings in a structured and organized manner. It provides valuable insights into the articles' sentiment, complexity, and other characteristics, facilitating data-driven decision-making and further research.
+
+
+
+
+
+Steps to run .py file
+
+1. Make sure you have Python installed on your computer.
+2. Install the necessary libraries such as BeautifulSoup, pandas, and nltk using pip.
+3. Place the input Excel file ("Input.xlsx") and the Python script in the same directory.
+4. Run the Python script by executing it with the Python interpreter. You can do this by opening your command prompt or terminal, navigating to the directory containing the script, and typing python your_script.py.
+5. The script will do its magic, extracting data, analyzing text, and generating the output Excel file ("Output.xlsx").
+
+
+
+
+Dependencies
+
+requests - 2.31.0
+beautifulsoup4 - 4.12.3
+pandas - 2.2.1
+numpy - 1.26.4
+re - 0.8.3
+nltk - 3.8.1
+ipython - 8.22.2
